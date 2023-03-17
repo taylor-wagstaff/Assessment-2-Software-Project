@@ -3,6 +3,8 @@ class Ticket_system():
 
   def __init__(self):
       self.tickets = []
+      self.response = ["Not Yet Provided"]
+
 
   def create_ticket(self):
       print("                    ")
@@ -30,8 +32,11 @@ class Ticket_system():
         for t in self.tickets:
             t.display();
       
-  # def response(self):
-  #     pass
+  def response(self):
+      print("                    ")
+      print("****** Ticket Response ******")
+      self.response = input("What is your response? ")
+      # t = Ticket()
       
 
 
@@ -39,6 +44,7 @@ class Ticket_system():
 
 
 class Ticket():
+    counter = 0
     ticket_id: None;
     ticket_status: None;
     staff_id: None;
@@ -55,8 +61,9 @@ class Ticket():
         self.email = email
         self.description = description
         self.response = response 
-        self.ticket_id = ticket_id
+        self.ticket_id = Ticket.counter + 2000
         self.ticket_status = ticket_status
+        Ticket.counter += 1
          
 
     #methods, self is a varible which allows access to attributes
