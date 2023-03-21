@@ -1,5 +1,16 @@
 from ticket import *
 
+
+# To Do:
+
+# Display Tickets
+# Add Tickets
+# Respond to a ticket by providing a feedback response.
+# “Password Change”
+# Tracking The number of tickets submitted, number of resolved tickets,
+# Number of open tickets,A way to display those statistics to the console
+
+
 if __name__ == "__main__":
     ts = Ticket_system()
 
@@ -22,7 +33,7 @@ while True:
       elif select == 2:
           ts.create_ticket()
       elif select == 3:
-          print("Method for Response")
+          ts.create_response()
       elif select == 4:
           print("Method for Reopen a Ticket")
       elif select == 5:

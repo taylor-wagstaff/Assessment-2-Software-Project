@@ -32,11 +32,16 @@ class Ticket_system():
         for t in self.tickets:
             t.display();
       
-  def response(self):
+  def create_response(self):
       print("                    ")
+      print(self.response)
       print("****** Ticket Response ******")
       self.response = input("What is your response? ")
-      # t = Ticket()
+      return self.response
+
+      # self.responses.append(t)
+
+
       
 
 
@@ -66,6 +71,8 @@ class Ticket():
         Ticket.counter += 1
          
 
+  
+
     #methods, self is a varible which allows access to attributes
     def display(self):
         print("                    ")
@@ -81,11 +88,16 @@ class Ticket():
         print("                    ")
         print("                    ")
 
-
-        
-
+   
+   
 
     def password_change(self):
+        # Response method.
+        # Password
+        # for resolving password change requests.
+        #  As well as calling the method that would 
+        # generate the new password, it should set up a response 
+        # for the ticket and change the ticket status to closed.
         #If the ticket’s description of the issue 
         # contains the words “Password Change”, 
         # the new password should be generated 
@@ -97,5 +109,10 @@ class Ticket():
         # consider: split(), join(), string operations)
         print("password change")
 
+
+    # Method TicketStats
+    #  in Ticket class should contain information on 
+    # ticket statistics and shall be able to return 
+    # the statistics information.
 
       
