@@ -33,11 +33,11 @@ while True:
       elif select == 2:
           ts.create_ticket()
       elif select == 3:
-          ts.create_response()
+          ts.respond_ticket()
       elif select == 4:
-          print("Method for Reopen a Ticket")
+          ts.change_status()
       elif select == 5:
-          print("Method to display statistics")
+          ts.ticket_stats()
       elif select == 0:
           quit()
       elif select != int:
