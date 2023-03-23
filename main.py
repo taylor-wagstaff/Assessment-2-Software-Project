@@ -1,14 +1,6 @@
-from ticket import *
+from system import *
 
 
-# To Do:
-
-# Display Tickets
-# Add Tickets
-# Respond to a ticket by providing a feedback response.
-# “Password Change”
-# Tracking The number of tickets submitted, number of resolved tickets,
-# Number of open tickets,A way to display those statistics to the console
 
 
 if __name__ == "__main__":
@@ -17,15 +9,16 @@ if __name__ == "__main__":
 
 
 while True:
-      print("                    ")
-      print("****** Menu ******")
-      print("[Press 1] To display all Tickets: ")
-      print("[Press 2] To add Ticket: ")
-      print("[Press 3] To provide a response: ")
-      print("[Press 4] To reopen a Ticket: ")
-      print("[Press 5] To Display Statistics: ")
+      
+      print("\n")
+      print(bcolors.OKBLUE + "****** MENU ******" + bcolors.ENDC)
+      print(bcolors.OKGREEN + "[Press 1]" + bcolors.ENDC + " To display all Tickets: ")
+      print(bcolors.OKRED + "[Press 2]" + bcolors.ENDC + " To add Ticket: ")
+      print(bcolors.OKYELLOW + "[Press 3]" + bcolors.ENDC + " To provide a response: ")
+      print(bcolors.OKVIOLET + "[Press 4]" + bcolors.ENDC + " To reopen a Ticket: ")
+      print(bcolors.OKBEIGE + "[Press 5]" + bcolors.ENDC + " To Display Statistics: ")
       print("[Press 0] Press 0 to Leave: ")
-      print("                    ")
+      print("\n")
       select = int(input("Please make a Selection:  "))
 
       if select == 1:
