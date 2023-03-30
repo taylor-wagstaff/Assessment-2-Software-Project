@@ -2,7 +2,23 @@
 Taylor's Assessment 2: Software Project
 
 
-This assessment represents 50% of your final grade.
+
+# Instructions:
+
+Please run main.py
+For windows: python main.py
+For Mac: python3 main.py
+
+main.py contains a basic terminal user interface which takes user inputs from a menu of options. I prefer to run the program outside of vs code for clarity.
+
+
+
+
+
+
+
+
+
 
 # Assessment Overview
 Think about the Software Project like a piece of art, only you're creating a Software Project based on your own technical research and emerging practice.
